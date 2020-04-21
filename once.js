@@ -6,7 +6,7 @@ function once(func) {
         result = func(...arguments)
         count = count+1
         return result 
- }      // TIP: arguments 키워드 혹은, spread operator를 사용하세요.
+ }      
       else if (count >=1){
         return result
       }
