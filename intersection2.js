@@ -23,9 +23,9 @@ function each(collection, iterator) {
     };
 
     function intersection(...args) {
-        let result=[]
-        let concated = []
-        count = {};
+        let result=[];
+        let concated = [];
+        let count = {};
         const arglength = args.length;
 
         // 모든 array를 합쳐 놓음 
