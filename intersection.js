@@ -32,7 +32,7 @@ function each(collection, iterator) {
     each(args, arr => concated = concated.concat(arr));
 
     each(concated, arr => { 
-      if(filter(concated, arrcheck => arrcheck === arr).length === arglength && !(result.includes(arr))){ 
+      if(filter(concated, arrcheck => arrcheck === arr).length === arglength && !(result.includes(arr))){ // check arr is included in both arrays
         // count the number of element called arr, in concated and check if it is same with arglength
         result.push(arr);
       }
