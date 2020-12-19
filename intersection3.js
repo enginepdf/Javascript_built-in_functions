@@ -40,7 +40,6 @@ function filter(collection, test) {
         }
 
     function intersection() {
-        let result
         let args = [...arguments]
         let allarray = uniq(flatten(args))    
         let temp = []
