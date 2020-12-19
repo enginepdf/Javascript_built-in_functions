@@ -2,7 +2,7 @@ function uniq(array) {
     var result=[];
       for(let i=0 ; i<array.length ; i++){
         let count = 0;
-       for(let j =0 ; j<result.length ; j++){
+       for(let j =0 ; j<result.length ; j++){ // if(result.includes(array[i]))
         if(array[i] !== result[j]){
           count = count+1;
         } 
