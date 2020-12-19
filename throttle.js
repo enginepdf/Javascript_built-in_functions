@@ -3,7 +3,7 @@ function throttle(func, wait) {
     return function() {
       if(count===0){
         count=count+1
-        func
+        func();
       } else if(count>=1){
         count=count+1
         setTimeout(func, wait)
