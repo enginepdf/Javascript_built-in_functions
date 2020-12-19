@@ -43,6 +43,7 @@ function reduce(collection, iterator, accumulator) {
       function zip() {
         let maxlength = reduce([...arguments], (acc, cur) => Math.max(acc, cur.length), 0);
         let result = [];
+        console.log([...arguments]);
         each([...arguments], arr => {  // function arr
           for(let i = 0; i < maxlength; i++) {
             if(result[i] === undefined) {    // if(result[i] === undefined) result[i] = []
@@ -53,18 +54,16 @@ function reduce(collection, iterator, accumulator) {
          return result;
         }
     
-   /*     
+   
 let cities = ['LA', 'Paris', 'Barcelona'];
 let ages = [30, 50, 60];
 let America = [true];
 let France =[,true,];
 let Spain=[,,true];
 zip(cities, ages, America, France, Spain)
-(3) [Array(5), Array(5), Array(5)]
-0: (5) ["LA", 30, true, undefined, undefined]
-1: (5) ["Paris", 50, undefined, true, undefined]
-2: (5) ["Barcelona", 60, undefined, undefined, true]
-length: 3
-__proto__: Array(0)
-
-*/
+// (3) [Array(5), Array(5), Array(5)]
+// 0: (5) ["LA", 30, true, undefined, undefined]
+// 1: (5) ["Paris", 50, undefined, true, undefined]
+// 2: (5) ["Barcelona", 60, undefined, undefined, true]
+// length: 3
+// __proto__: Array(0)
