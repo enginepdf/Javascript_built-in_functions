@@ -28,16 +28,20 @@ function invoke(collection, methodname, args) {
     return arr;
 };
 
-/* 
+
 var manyThings = [  
   ['C++', 'C', 'java'], 
   ['HTML', 'CSS', 'JS']];
 
-  invoke(manyThings, 'join', ' # ')  // ["C++ # C # java", "HTML # CSS # JS"]
+  console.log(invoke(manyThings, 'join', ' # '))  // ["C++ # C # java", "HTML # CSS # JS"]
 
-  invoke(['charger', 'for', 'appledevice'], 'toUpperCase')   //  ["CHARGER", "FOR", "APPLEDEVICE"]
-*/
+  console.log(invoke(['charger', 'for', 'appledevice'], 'toUpperCase'))   //  ["CHARGER", "FOR", "APPLEDEVICE"]
 
+  console.log(typeof 'join'); // string
+  console.log(typeof 'toUpperCase'); // string
+
+  console.log('js'['toUpperCase']()); // JS
+  console.log(['HTML', 'CSS', 'JS']['join']('#')); // HTML#CSS#JS
   /*
 
   function Product(name, price) {
